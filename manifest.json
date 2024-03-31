@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Lyrically",
+    "description": "",
+    "version": "1.0",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "temp.png"
+    },
+    "content_scripts": [
+        {
+          "js": ["scripts/content.js"],
+          "matches": [
+            "https://open.spotify.com/lyrics/*"
+          ]
+        }
+      ]
+  }
